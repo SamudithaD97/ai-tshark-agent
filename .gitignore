@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.*
+*.key
+secrets.txt
+credentials.json
+
+# Personal packet captures
+captures/normal.pcapng
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
