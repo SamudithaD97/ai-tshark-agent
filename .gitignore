@@ -1,19 +1,66 @@
-# Secrets
+
+# ==========================================
+# Agentic AI Network Security Analyzer
+# Git Ignore Configuration
+# ==========================================
+
+# API Keys and Secrets
 .env
 .env.*
+!.env.example
 *.key
+*.pem
+*.p12
+*.pfx
 secrets.txt
 credentials.json
+api_key.txt
+.streamlit/secrets.toml
 
-# Personal packet captures
+# Personal and Live Network Captures
 captures/normal.pcapng
+captures/live_*
+captures/uploaded_*
+captures/*.pcap
+captures/*.pcapng
+captures/*.cap
 
-# Python
+# AI-Generated Security Reports
+reports/*
+!reports/.gitkeep
+
+# Python Cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# IDE / OS
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Build Files
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Streamlit Cache
+.streamlit/cache/
+
+# IDE Files
 .vscode/
 .idea/
+
+# Operating System Files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.bak
